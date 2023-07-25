@@ -1,0 +1,11 @@
+.App {
+  background-color: var(--neutral-off-white);
+}
+
+.purple-caret-color {
+  caret-color: var(--primary-purple);
+}
+
+.form {
+  margin-bottom: 3rem;
+}
