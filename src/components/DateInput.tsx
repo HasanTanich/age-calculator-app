@@ -31,7 +31,7 @@ const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
     };
 
     return (
-      <FormControl w={"unset"} flexGrow={1}>
+      <FormControl w={"unset"}>
         <FormLabel
           htmlFor={htmlForValue}
           color={!isError ? "var(--primary-light-red)" : "gray.500"}
@@ -45,12 +45,12 @@ const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         >
           {children}
           <Input
-            w="90%"
+            w="100%"
+            maxW="132px"
             letterSpacing={["0", "0.3rem"]}
             {...props}
             ref={ref}
-            size={["md", "lg"]}
-            fontSize={[14, 18]}
+            size={["sm", "md", "lg"]}
             color={"black"}
             placeholder={placeholder}
             className="purple-caret-color"

@@ -11,12 +11,12 @@ const AgeCalculator = () => {
     <Box
       bgColor={"white"}
       w={"90%"}
-      maxW={500}
+      maxW={700}
       borderRadius={16}
       borderBottomRightRadius={100}
-      px={4}
-      py={6}
+      p={[4, 10]}
       boxShadow="base"
+      zIndex={100}
     >
       <Form onSetAge={setAge} />
       <Age age={age} />
